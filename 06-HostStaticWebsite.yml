@@ -1,6 +1,6 @@
 # Write a playbook to install httpd, copy index.html and start httpd server
 - hosts: all
-  become: true
+  become: true    #as a rootuser install the software
   tasks:
     - name: install httpd package
       yum:
