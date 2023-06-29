@@ -2,6 +2,6 @@
 - hosts: all
   tasks:
     - name: Create file in all host nodes
-      file: 
-        path: /home/ansible/hello.txt
-        state: touch
+      file:                                 #file module we are using
+        path: /home/ansible/hello.txt       #create file inside the home directory of ansible user
+        state: touch                        #by using touch command
