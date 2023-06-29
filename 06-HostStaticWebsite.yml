@@ -8,7 +8,7 @@
         state: latest
     - name: copy index.html file
       copy:
-        src: index.html
+        src: index.html      #present location index.html is required
         dest: /var/www/html/index.html
     - name: start httpd service
       service:
